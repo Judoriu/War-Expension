@@ -1,0 +1,24 @@
+[
+    {
+		"name": "Hydrogen",
+		"resourceType": "Strategic",
+		"revealedBy": "Biology",
+		"terrainsCanBeFoundOn": ["Plains","Grassland","Hill","Desert"],
+		"production": 1,
+        "improvedBy": ["Hydrogen Recuperator"],
+        "improvementStats": {"production": 3},
+		"uniques": ["Guaranteed with Strategic Balance resource option",
+					"Generated with weight [99] <in [{Featureless} {Grassland}] tiles>",
+					"Generated with weight [70] <in [{Featureless} {Plains}] tiles>",
+                    "Generated with weight [65] <in [{Featureless} {Desert}] tiles>",
+					"Minor deposits generated with weight [10] <in [{Grassland} {Hill}] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
+					"Minor deposits generated with weight [10] <in [{Plains} {Hill}] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
+					"Minor deposits generated with weight [100] <in [{Featureless} {Grassland}] tiles> <in [Fresh Water] tiles>",
+					"Minor deposits generated with weight [20] <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
+					"Minor deposits generated with weight [30] <in [{Featureless} {Plains}] tiles>",
+                    "Minor deposits generated with weight [10] <in [{Featureless} {Desert}] tiles>"
+                ],
+		"majorDepositAmount": {"sparse": 5, "default": 7, "abundant": 9},
+		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 3}
+	}
+]

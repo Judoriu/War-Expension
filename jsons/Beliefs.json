@@ -1,1 +1,32 @@
-
+///////////////////////////////////////// Panthéon /////////////////////////////////////////
+[
+    {
+        "name": "God Of Settler",
+        "type": "Pantheon",
+        "uniques": [
+            "[+1 Faith] per [4] population [in all cities]",
+            "Free [Settler] appears"
+    ]
+    },
+    {
+        "name": "Goddess Of Fertility",
+        "type": "Pantheon",
+        "uniques": [
+            "[+5 Food] [in all cities]"
+        ]
+    },
+    {
+        "name": "God Of Priest",
+        "type": "Pantheon",
+        "uniques": [
+            "[+1 Faith] per [1] population [in all cities]"
+        ]
+    },
+    {
+        "name": "God Of Artisant",
+        "type": "Pantheon",
+        "uniques": [
+            "[+1 Production] per [1] population [in all cities]"
+        ]
+    }
+]

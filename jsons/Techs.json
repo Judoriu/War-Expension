@@ -1,0 +1,41 @@
+[
+    {
+        "columnNumber": 3,
+        "era": "Classical era",
+        "techCost": 105,
+        "techs": [
+            {
+                "name": "Healing",
+                "row": 4,
+                "prerequisites": ["Trapping"]
+            }
+        ]
+    },
+    {
+		"columnNumber": 5,
+		"era": "Medieval era",
+		"techCost": 275,
+		"techs": [
+            {
+                "name": "Slavery",
+                "row": 10,
+                "prerequisites": ["Iron Working"],
+                "uniques": [
+                    "[+100]% weight to this choice for AI decisions"
+                ]
+            }
+        ]
+    },
+    {
+        "columnNumber": 8,
+        "era": "Renaissance era",
+        "techCost": 1150,
+        "techs": [
+            {
+                "name": "Abolition",
+                "row": 8,
+                "prerequisites": ["Printing Press", "Banking"]
+            }
+        ]
+    }
+]

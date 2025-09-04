@@ -1,0 +1,178 @@
+[
+    {
+        "name": "Tank marchal",
+        "unitType": "Armored",
+        "cost": 375,
+        "movement": 7,
+        "strength": 80,
+        "rangedStrength": 80,
+        "range": 3,
+        "requiredTech": "Combustion",
+        "requiredResource": "Oil"
+    },
+    {
+        "name": "Army",
+        "unitType": "Gunpowder",
+        "cost": 375,
+        "movement": 2,
+        "strength": 75,
+        "rangedStrength": 45,
+        "range": 2,
+        "requiredTech": "Plastics"
+    },
+    {
+        "name": "Medic",
+        "unitType": "Sword",
+        "cost": 120,
+        "requiredTech": "Healing",
+        "uniques": [
+            "All adjacent units heal [+50] HP when healing"
+        ],
+        "movement": 3
+    },
+    {
+        "name": "Great Settler",
+        "unitType": "Civilian",
+        "cost": 200,
+        "uniques":[
+            "Founds a new city <by consuming this unit>",
+            "Excess Food converted to Production when under construction",
+			"Requires at least [6] population",
+            "Great Person - [Build]",
+            "Uncapturable",
+            "Unbuildable"
+        ],
+        "movement": 5
+    },
+    {
+        "name": "Slave",
+        "unitType": "Civilian",
+        "cost": 35,
+        "requiredTech": "Slavery",
+        "obsoleteTech": "Abolition",
+        "movement": 2,
+        "uniques": [
+            "Can build [Land] improvements on tiles",
+            "Automation is a primary action"
+        ]
+    },
+	{
+		"name": "Royal Navy",
+		"unitType": "Ranged Water",
+		"movement": 5,
+		"strength": 50,
+        "rangedStrength": 75,
+        "range": 3,
+		"cost": 150,
+		"requiredTech": "Navigation",
+		"promotions": ["Coastal Raider I", "Coastal Raider II", "Supply", "[Privateer] ability"],
+		"attackSound": "cannon"
+	},
+    {
+        "name": "Ballista",
+        "unitType": "Siege",
+        "strength": 8,
+        "reaplaces": "Ballista",
+        "rangedStrength": 10,
+        "range": 2,
+        "movement": 2,
+        "cost": 75,
+        "requiredTech": "Mathematics",
+        "obsoleteTech": "Physics",
+        "upgradesTo": "Trebuchet",
+        "uniques": ["[+200]% Strength <vs cities> <when attacking>", "No defensive terrain bonus",
+			"Must set up to ranged attack", "[-1] Sight"],
+		"hurryCostModifier": 20,
+		"attackSound": "throw"
+    },
+    {
+        "name": "Great Architect",
+        "unitType": "Civilian",
+        "uniques": [
+            "Can build [Citadel] improvements on tiles",
+            "Can build [Land] improvements on tiles",
+            "Is part of Great Person group [Great Person]",
+            "Great Person - [Build]",
+            "Unbuildable",
+            "Uncapturable"
+        ],
+        "movement": 2
+    },
+    {
+        "name": "Warship",
+        "unitType": "Ranged Water",
+        "strength": 15,
+        "rangedStrength": 20,
+        "range": 2,
+        "cost": 175,
+        "requiredTech": "Compass",
+        "obsoleteTech": "Electronics",
+        "movement": 3
+    },
+    {
+        "name": "Missile Backup",
+        "unitType": "Siege",
+        "strength": 40,
+        "rangedStrength": 80,
+        "range": 4,
+        "movement": 3,
+        "cost": 400,
+        "requiredTech": "Combined Arms",
+        "uniques": [
+            "Can carry [2] [Missile] units",
+            "Can see over obstacles"
+        ]
+    },
+    {
+        "name": "Hydrogen Bomb",
+        "unitType": "Missile",
+        "cost": 350,
+        "strength": 200,
+        "rangedStrength": 200,
+        "range": 10,
+        "requiredTech": "Ballistics",
+        "requiredResource": "Hydrogen",
+        "uniques": [
+            "Nuclear weapon of Strength [3]",
+            "Blast radius [3]"
+        ],
+        "attackSound": "Hydrogene Explosion"
+    },
+    {
+        "name": "Plane",
+        "unitType": "Helicopter",
+        "uniqueTo": "Arabia",
+        "movement": 5,
+        "cost": 450,
+        "requiredTech": "Flight",
+        "requiredResource": "Aluminum",
+        "strength": 75,
+        "uniques": [
+            "Can only attack [City] units",
+            "No defensive terrain bonus",
+            "Can see over obstacles",
+            "Blast radius [3]",
+            "Can pass through impassable tiles",
+            "May travel on Water tiles without embarking"
+        ]
+    },
+    {
+        "name": "Big boy",
+        "unitType": "Siege",
+        "strength": 28,
+        "rangedStrength": 40,
+        "range": 2,
+        "cost": 370,
+        "movement": 1,
+        "requiredTech": "Abolition",
+        "upgradesTo": "Artillery",
+        "uniques": [
+            "[+200]% Strength <vs cities> <when attacking>",
+            "No defensive terrain bonus",
+            "Must set up to ranged attack",
+            "[-1] Sight",
+            "Never appears as a Barbarian unit"
+        ],
+		"attackSound": "cannon"
+    }
+]

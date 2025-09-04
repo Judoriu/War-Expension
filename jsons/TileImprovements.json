@@ -1,0 +1,12 @@
+[
+    {
+		"name": "Hydrogen Recuperator",
+		"turnsToBuild": 9,
+		"techRequired": "Biology",
+		"uniques": [
+            "Can only be built to improve a resource", 
+            "Cannot be built on [Water] tiles", 
+            "Pillaging this improvement yields approximately [+20 Gold]"
+        ]
+	}
+]

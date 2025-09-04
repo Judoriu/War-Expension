@@ -1,0 +1,8 @@
+[
+	{
+		"name":"Build",
+		"production":3,
+		"greatPersonPoints": {"Great Architect":3},
+		"color": [0,0,255]
+	}
+]
