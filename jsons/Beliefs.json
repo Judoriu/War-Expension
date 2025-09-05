@@ -19,8 +19,9 @@
         "name": "God Of Priest & Artisant",
         "type": "Pantheon",
         "uniques": [
-            "[+1 Faith] per [3] population [in all cities]",
-            "[+1 Production] per [3] population [in all cities]"
+            "[+1 Faith] per [4] population [in all cities]",
+            "[+1 Production] per [4] population [in all cities]"
         ]
     }
 ]
+
