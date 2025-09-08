@@ -17,7 +17,7 @@
     {
         "columnNumber": 1,
         "era": "Prehistoric era",
-        "techCost": 14,
+        "techCost": 20,
         "buildingCost": 16,
         "wonderCost": 33,
         "techs": [
@@ -25,6 +25,7 @@
 				"name": "Foraging",
 				"row": 6,
                 "prerequisites": ["Sedentary"],
+				"unique": ["Free [Worker] appears"],
 				"quote": "'A foraging wild creature, intent above all upon survival, is as strong as the grass.' - Richard Adams"
 			}
         ]
@@ -32,7 +33,7 @@
     {
         "columnNumber": 2,
         "era": "Prehistoric era",
-        "techCost": 16,
+        "techCost": 30,
         "buildingCost": 18,
         "wonderCost": 34,
         "techs": [
@@ -62,7 +63,7 @@
     {
         "columnNumber": 3,
         "era":"Prehistoric era",
-        "techCost": 18,
+        "techCost": 40,
         "buildingCost": 20,
         "wonderCost": 36,
         "techs": [
@@ -81,7 +82,7 @@
     {
 		"columnNumber": 4,
 		"era": "Prehistoric era",
-        "techCost": 20,
+        "techCost": 50,
         "buildingCost": 22,
         "wonderCost": 38,
         "techs": [
@@ -110,7 +111,7 @@
     {
 		"columnNumber": 5,
 		"era": "Ancient era",
-		"techCost": 35,
+		"techCost": 60,
 		"buildingCost": 60,
 		"wonderCost": 185,
         "techs": [
@@ -130,7 +131,7 @@
     {
 		"columnNumber": 6,
 		"era": "Ancient era",
-		"techCost": 35,
+		"techCost": 75,
 		"buildingCost": 60,
 		"wonderCost": 185,
         "techs": [
@@ -167,7 +168,7 @@
     {
 		"columnNumber": 7,
 		"era": "Ancient era",
-		"techCost": 35,
+		"techCost": 95,
 		"buildingCost": 60,
 		"wonderCost": 185,
         "techs": [
@@ -194,9 +195,7 @@
             {
                 "name": "Healing",
                 "row": 6,
-                "uniques": [
-                    "Unavailable <before discovering [Calendar]> <before discovering [Writing]>"
-                ]
+				"prerequisites": ["Calendar"]
             }
         ]
     },
@@ -211,7 +210,8 @@
 				"name": "Optics",
 				"cost": 85,
 				"row": 1,
-				"uniques": ["Unavailable <before discovering [Sailing]> <before discovering [Bronze Working]>", "Enables embarkation for land units"],
+				"prerequisites": ["Masonry", "Bronze Working"],
+				"uniques": ["Enables embarkation for land units"],
 				"quote": "'He made an instrument to know if the moon shine at full or no.' - Samuel Butler"
 			},
 			{
@@ -231,7 +231,8 @@
 			{
 				"name": "Drama and Poetry",
 				"row": 7,
-                "uniques": ["Unavailable <before discovering [The Wheel]> <before discovering [Writing]>"],
+				"prerequisites": ["Healing"],
+                "uniques": ["Unavailable <before discovering [Calendar]> <before discovering [Writing]>"],
 				"quote": "'What is drama but life with the dull bits cut out.' - Alfred Hitchcock"
 			},
 			{
@@ -267,6 +268,7 @@
 			{
 				"name": "Iron Working",
 				"row": 5,
+				"prerequisites": ["Construction"],
                 "uniques": ["[-50]% weight to this choice for AI decisions", "Unavailable <before discovering [Bronze Working]>"],
 				"quote": "'Do not wait to strike til the iron is hot, but make it hot by striking.' - William Butler Yeats"
 			},
@@ -399,8 +401,8 @@
 			{
 				"name": "Astronomy",
 				"row": 2,
-				"uniques": ["[+1] Movement <for [Embarked] units>","Enables [Embarked] units to enter ocean tiles","[+50]% weight to this choice for AI decisions"],
-				"prerequisites": ["Compass","Education"],
+				"uniques": ["Unavailable <before discovering [Education]>","[+1] Movement <for [Embarked] units>","Enables [Embarked] units to enter ocean tiles","[+50]% weight to this choice for AI decisions"],
+				"prerequisites": ["Compass"],
 				"quote": "'Joyfully to the breeze royal Odysseus spread his sail, and with his rudder skillfully he steered.' - Homer"
 			},
             {
@@ -426,8 +428,8 @@
 			{
 				"name": "Gunpowder",
 				"row": 4,
-				"prerequisites": ["Physics","Steel"],
-                "uniques": ["[-50]% weight to this choice for AI decisions"],
+				"prerequisites": ["Steel"],
+                "uniques": ["[-50]% weight to this choice for AI decisions", "Unavailable <before discovering [Physics]>"],
 				"quote": "'The day when two army corps can annihilate each other in one second, all civilized nations, it is to be hoped, will recoil from war and discharge their troops.' - Alfred Nobel"
 			}
         ]
@@ -810,7 +812,7 @@
 		"techs": [
 			{
 				"name": "Future Tech",
-				"row": 5,
+				"row": 6,
 				"prerequisites": ["Globalization","Particle Physics","Nuclear Fusion","Nanotechnology","Stealth"],
 				"uniques": ["Can be continually researched"],
 				"quote": "'I think we agree, the past is over.' - George W. Bush",

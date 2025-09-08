@@ -1219,5 +1219,13 @@
 		"faith": 2,
 		"happiness": 2,
 		"uniques": ["Unbuildable", "Only available <when religion is enabled>"]
+	},
+	{
+		"name": "News Paper &Co",
+		"requiredTech": "Ink",
+		"maintenance": 1,
+		"culture": 3,
+		"faith": 3,
+		"happiness": 4
 	}
 ]

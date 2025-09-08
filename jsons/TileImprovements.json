@@ -55,7 +55,7 @@
 		"uniques": ["Can only be built to improve a resource", "Cannot be built on [Water] tiles", "Pillaging this improvement yields approximately [+20 Gold]"],
 		"shortcutKey": "W"
 	},
-  {
+	{
 	"name": "Hydrogen Recuperator",
 	"turnsToBuild": 9,
 	"techRequired": "Biology",
@@ -99,8 +99,17 @@
 		"turnsToBuild": 1,
 		"terrainsCanBeBuiltOn": ["Coast"],
 		"food": 1,
-		"techRequired": "Fishing",
+		"techRequired": "Sailing",
 		"uniques": ["[+1 Gold] <after discovering [Compass]>", "Can only be built to improve a resource", "Pillaging this improvement yields approximately [+10 Gold]"],
+		"shortcutKey": "F"
+	},
+	{
+		"name": "Fishing Post",
+		"turnsToBuild": 1,
+		"terrainsCanBeBuiltOn": ["Lakes"],
+		"food": 1,
+		"techRequired": "Fishing",
+		"uniques": ["Can only be built to improve a resource"],
 		"shortcutKey": "F"
 	}
 
